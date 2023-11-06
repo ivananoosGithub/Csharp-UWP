@@ -1,0 +1,2 @@
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Tests.xUnit\TraVeL.Tests.xUnit.csproj;x86
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\TraVeL.csproj;x86

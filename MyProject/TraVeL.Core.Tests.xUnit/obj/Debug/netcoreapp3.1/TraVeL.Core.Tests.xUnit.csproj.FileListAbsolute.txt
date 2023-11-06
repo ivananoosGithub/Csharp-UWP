@@ -1,0 +1,5 @@
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Core.Tests.xUnit\obj\Debug\netcoreapp3.1\TraVeL.Core.Tests.xUnit.csproj.AssemblyReference.cache
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Core.Tests.xUnit\obj\Debug\netcoreapp3.1\TraVeL.Core.Tests.xUnit.GeneratedMSBuildEditorConfig.editorconfig
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Core.Tests.xUnit\obj\Debug\netcoreapp3.1\TraVeL.Core.Tests.xUnit.AssemblyInfoInputs.cache
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Core.Tests.xUnit\obj\Debug\netcoreapp3.1\TraVeL.Core.Tests.xUnit.AssemblyInfo.cs
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL.Core.Tests.xUnit\obj\Debug\netcoreapp3.1\TraVeL.Core.Tests.xUnit.csproj.CoreCompileInputs.cache

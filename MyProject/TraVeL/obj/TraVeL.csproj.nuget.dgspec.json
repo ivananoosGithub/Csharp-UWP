@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL\\TraVeL.csproj": {}
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL\\TraVeL.csproj": {}
   },
   "projects": {
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
+        "projectUniqueName": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
         "projectName": "TraVeL.Core",
-        "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
+        "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
         "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
-        "outputPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\obj\\",
+        "outputPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,6 +52,18 @@
               "target": "Package",
               "version": "[2.2.6, )"
             },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -82,14 +94,14 @@
         }
       }
     },
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL\\TraVeL.csproj": {
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL\\TraVeL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL\\TraVeL.csproj",
+        "projectUniqueName": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL\\TraVeL.csproj",
         "projectName": "TraVeL",
-        "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL\\TraVeL.csproj",
+        "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL\\TraVeL.csproj",
         "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
-        "outputPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL\\obj\\",
+        "outputPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -111,8 +123,8 @@
         "frameworks": {
           "uap10.0.18362": {
             "projectReferences": {
-              "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
-                "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj"
+              "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
+                "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj"
               }
             }
           }
@@ -121,6 +133,18 @@
       "frameworks": {
         "uap10.0.18362": {
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.12, )"

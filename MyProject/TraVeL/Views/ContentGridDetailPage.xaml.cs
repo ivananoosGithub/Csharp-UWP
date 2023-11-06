@@ -23,9 +23,9 @@ namespace TraVeL.Views
         {
             base.OnNavigatedTo(e);
             this.RegisterElementForConnectedAnimation("animationKeyContentGrid", itemHero);
-            if (e.Parameter is long orderID)
+            if (e.Parameter is byte id)
             {
-                await ViewModel.InitializeAsync(orderID);
+                await ViewModel.InitializeAsync(id);
             }
         }
 

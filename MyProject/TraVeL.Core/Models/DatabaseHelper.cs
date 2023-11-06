@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TraVeL.Core.Helpers;
 using Microsoft.EntityFrameworkCore;
+using TraVeL.Core.Helpers;
 
 namespace TraVeL.Core.Models
 {
@@ -10,7 +10,11 @@ namespace TraVeL.Core.Models
     {
         public static bool IsDatabaseConnected()
         {
-            using (var context = new AppDbContext())
+            var options = new DbContextOptionsBuilder<AppDbContext>()
+                .UseSqlServer(Constants.connectionString) // Replace with your SQL Server connection string
+                .Options;
+
+            using (var context = new AppDbContext(options))
             {
                 try
                 {

@@ -69,11 +69,6 @@
                         Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}"
                         RelativePanel.AlignTopWithPanel="True"
                         RelativePanel.AlignLeftWithPanel="True">
-                        <FontIcon x:ConnectionId='18'
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            FontSize="70"
-                                                                   />
                     </Grid>
 
                     <TextBlock x:ConnectionId='7'
@@ -82,29 +77,29 @@
                         RelativePanel.AlignTopWithPanel="True"
                         RelativePanel.RightOf="itemHero"
                         Style="{ThemeResource TitleTextBlockStyle}"
-                                                                            />
+                                                                                  />
 
                     <StackPanel x:ConnectionId='8' x:Name="propertiesGroup1" RelativePanel.Below="itemHero">
                         <StackPanel x:ConnectionId='14' x:Name="statusGroup" Margin="{StaticResource SmallTopMargin}">
                             <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Status" />
-                            <TextBlock x:ConnectionId='17' Style="{StaticResource DetailBodyBaseMediumStyle}"                                       />
+                            <TextBlock x:ConnectionId='17' Style="{StaticResource DetailBodyBaseMediumStyle}"                                              />
                         </StackPanel>
 
                         <StackPanel x:ConnectionId='15' x:Name="orderDateGroup" Margin="{StaticResource SmallTopMargin}">
                             <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Order date" />
-                            <TextBlock x:ConnectionId='16' Style="{StaticResource DetailBodyBaseMediumStyle}"                                          />
+                            <TextBlock x:ConnectionId='16' Style="{StaticResource DetailBodyBaseMediumStyle}"                                              />
                         </StackPanel>
                     </StackPanel>
 
                     <StackPanel x:ConnectionId='9' x:Name="propertiesGroup2" RelativePanel.Below="propertiesGroup1">
                         <StackPanel x:ConnectionId='10' x:Name="shipToGroup" Margin="{StaticResource SmallTopMargin}">
                             <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Ship to" />
-                            <TextBlock x:ConnectionId='13' Style="{StaticResource DetailBodyBaseMediumStyle}"                                       />
+                            <TextBlock x:ConnectionId='13' Style="{StaticResource DetailBodyBaseMediumStyle}"                                              />
                         </StackPanel>
 
                         <StackPanel x:ConnectionId='11' x:Name="orderTotalGroup" Margin="{StaticResource SmallTopMargin}">
                             <TextBlock Style="{StaticResource DetailSubTitleStyle}" Text="Order total" />
-                            <TextBlock x:ConnectionId='12' Style="{StaticResource DetailBodyBaseMediumStyle}"                                           />
+                            <TextBlock x:ConnectionId='12' Style="{StaticResource DetailBodyBaseMediumStyle}"                                              />
                         </StackPanel>
                     </StackPanel>
 

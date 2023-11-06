@@ -9,11 +9,10 @@ namespace TraVeL.Core.Helpers
 {
     public class AppDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DbSet<DestinationModel> Destination { get; set; } // DbSet for your Destination model
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer("Server = Ivan-Kim\\SQLEXPRESS; " +
-                "Database = traveldb; User Id = ivankim; " +
-                "Password = ivan;");
         }
     }
 }

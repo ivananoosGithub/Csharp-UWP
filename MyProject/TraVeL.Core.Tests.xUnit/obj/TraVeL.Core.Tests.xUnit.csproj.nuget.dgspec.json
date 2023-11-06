@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj": {}
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj": {}
   },
   "projects": {
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj": {
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj",
+        "projectUniqueName": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj",
         "projectName": "TraVeL.Core.Tests.xUnit",
-        "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj",
+        "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\TraVeL.Core.Tests.xUnit.csproj",
         "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
-        "outputPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\obj\\",
+        "outputPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core.Tests.xUnit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
-                "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj"
+              "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
+                "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj"
               }
             }
           }
@@ -48,6 +48,18 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.10.0, )"
@@ -99,14 +111,14 @@
         }
       }
     },
-    "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
+    "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
+        "projectUniqueName": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
         "projectName": "TraVeL.Core",
-        "projectPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
+        "projectPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\TraVeL.Core.csproj",
         "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
-        "outputPath": "A:\\Programming\\C# Practice Codes\\C# Projects\\MyProject\\TraVeL.Core\\obj\\",
+        "outputPath": "A:\\Programming\\C#-Practice-Codes\\C#-Projects\\MyProject\\TraVeL.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -146,6 +158,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[2.2.6, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
