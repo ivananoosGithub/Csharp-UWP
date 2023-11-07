@@ -156,6 +156,9 @@
     <Compile Include="ViewModels\ContentGridDetailViewModel.cs" />
     <Compile Include="ViewModels\ContentGridViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\AddDestinationForm.xaml.cs">
+      <DependentUpon>AddDestinationForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ContentGridDetailPage.xaml.cs">
       <DependentUpon>ContentGridDetailPage.xaml</DependentUpon>
     </Compile>
@@ -190,6 +193,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddDestinationForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

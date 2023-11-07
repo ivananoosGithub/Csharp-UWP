@@ -356,3 +356,8 @@ A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\Mult
 A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\ProjectArchitectures.txt
 A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214534760000000.json
 A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637424527200000000.json
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\AddDestinationForm.xbf
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\Views\AddDestinationForm.g.i.cs
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\Views\AddDestinationForm.g.cs
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\Views\AddDestinationForm.xaml
+A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\obj\x86\Debug\Views\AddDestinationForm.xbf

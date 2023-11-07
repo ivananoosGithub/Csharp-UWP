@@ -57,5 +57,25 @@ namespace TraVeL.ViewModels
                 NavigationService.Navigate<ContentGridDetailPage>(clickedItem.Id);
             }
         }
+
+        public async Task RefreshDataAsync()
+        {
+            Source.Clear();
+            var options = new DbContextOptionsBuilder<AppDbContext>()
+                        .UseSqlServer(Core.Helpers.Constants.connectionString)
+                        .Options;
+
+            // Create an instance of AppDbContext with your DbContext options
+            var dbContext = new AppDbContext(options);
+
+            var sampleDataService = new SampleDataService(dbContext);
+
+            var data = await sampleDataService.GetContentGridDataAsync();
+            foreach (var item in data)
+            {
+                Source.Add(item);
+            }
+        }
+
     }
 }

@@ -247,6 +247,9 @@
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\AddDestinationForm.xbf">
+      <PackagePath>Views\AddDestinationForm.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\ContentGridDetailPage.xbf">
       <PackagePath>Views\ContentGridDetailPage.xbf</PackagePath>
     </AppxPackagedFile>

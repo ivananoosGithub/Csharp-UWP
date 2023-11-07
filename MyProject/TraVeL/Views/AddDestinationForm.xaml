@@ -1,0 +1,19 @@
+﻿<ContentDialog
+    x:Class="TraVeL.Views.AddDestinationForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Add Destination"
+    PrimaryButtonText="Add"
+    SecondaryButtonText="Cancel"
+    FullSizeDesired="False">
+
+    <StackPanel>
+        <TextBox x:Name="txtLocationName" PlaceholderText="Enter name of location" Header="Destination"/>
+        <TextBox x:Name="txtDescription" PlaceholderText="Enter description" Header="Description" />
+        <TextBox x:Name="textNumberOfPassenger" PlaceholderText="Enter number of passenger" Header="Number of Passenger"/>
+        <!-- Add more input fields as needed -->
+
+        <!-- You can add more input fields for other destination properties -->
+    </StackPanel>
+</ContentDialog>
+
