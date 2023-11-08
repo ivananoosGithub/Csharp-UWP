@@ -20,34 +20,53 @@
             <!-- AdaptiveGridView -->
         </Grid.RowDefinitions>
 
+        <ComboBox x:ConnectionId='3'
+            x:Name="SortOrderComboBox"
+                                                                 >
+            <ComboBoxItem Content="Ascending" />
+            <ComboBoxItem Content="Descending" />
+        </ComboBox>
+
+
         <!-- AutoSuggestBox and Search Results -->
         <StackPanel Grid.Row="0" Margin="{StaticResource MediumLeftRightMargin}">
-            <AutoSuggestBox x:ConnectionId='9'
+            <AutoSuggestBox x:ConnectionId='10'
             x:Name="SearchBox"
             PlaceholderText="Search for a destination"
                                    
             AutoSuggestBox.QueryIcon="Find"
             Width="634" />
-            <ListView x:ConnectionId='10'
+            <ListView x:ConnectionId='11'
+            Margin="0,15,0,0"
             x:Name="SearchResults"
             Height="100"
+            Background="AliceBlue"
             Visibility="Collapsed"
             SelectionMode="Single"
+            IsItemClickEnabled="True"
                                                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding location_name}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
 
         <!-- Add Destination Button -->
-        <Button x:ConnectionId='3'
+        <Button x:ConnectionId='4'
         Content="Add Destination"
-        Grid.Row="1"
+        Grid.Row="0"
         HorizontalAlignment="Right"
         VerticalAlignment="Top"
         Margin="{StaticResource SmallRightMargin}"
                                            />
 
         <!-- AdaptiveGridView -->
-        <controls:AdaptiveGridView x:ConnectionId='4'
+        <controls:AdaptiveGridView x:ConnectionId='5'
+        Margin="0,15,0,0"
         Grid.Row="2"
         Padding="{StaticResource MediumLeftRightMargin}"
         animations:Connected.ListItemElementName="itemThumbnail"
@@ -61,13 +80,13 @@
         StretchContentForSingleRow="False">
             <controls:AdaptiveGridView.ItemTemplate>
                 <DataTemplate                                     >
-                    <Grid x:ConnectionId='6'
+                    <Grid x:ConnectionId='7'
                     x:Name="itemThumbnail"
                     Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
                     Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
                         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <FontIcon x:ConnectionId='7'                                />
-                            <TextBlock x:ConnectionId='8'
+                            <FontIcon x:ConnectionId='8'                                />
+                            <TextBlock x:ConnectionId='9'
                             Margin="{StaticResource XXSmallTopMargin}"
                             HorizontalAlignment="Center"
                             Style="{ThemeResource BodyTextStyle}"

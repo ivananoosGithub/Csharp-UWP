@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.EntityFrameworkCore;
@@ -23,13 +24,18 @@ namespace TraVeL.ViewModels
 
         public ObservableCollection<DestinationModel> Source { get; } = new ObservableCollection<DestinationModel>();
 
+        public ObservableCollection<DestinationModel> SourceAscending { get; } = new ObservableCollection<DestinationModel>();
+        public ObservableCollection<DestinationModel> SourceDescending { get; } = new ObservableCollection<DestinationModel>();
+
+
         public ContentGridViewModel()
         {
         }
 
         public async Task LoadDataAsync()
         {
-            Source.Clear();
+            SourceAscending.Clear();
+            SourceDescending.Clear();
 
             var options = new DbContextOptionsBuilder<AppDbContext>()
             .UseSqlServer(Core.Helpers.Constants.connectionString)
@@ -45,6 +51,19 @@ namespace TraVeL.ViewModels
             foreach (var item in data)
             {
                 Source.Add(item);
+            }
+
+            // Sort and populate SourceAscending and SourceDescending
+            var sortedAscending = data.OrderBy(item => item.location_name).ToList();
+            foreach (var item in sortedAscending)
+            {
+                SourceAscending.Add(item);
+            }
+
+            var sortedDescending = data.OrderByDescending(item => item.location_name).ToList();
+            foreach (var item in sortedDescending)
+            {
+                SourceDescending.Add(item);
             }
         }
 
@@ -76,6 +95,25 @@ namespace TraVeL.ViewModels
                 Source.Add(item);
             }
         }
+
+        public void SortAscending()
+        {
+            Source.Clear();
+            foreach (var item in SourceAscending)
+            {
+                Source.Add(item);
+            }
+        }
+
+        public void SortDescending()
+        {
+            Source.Clear();
+            foreach (var item in SourceDescending)
+            {
+                Source.Add(item);
+            }
+        }
+
 
     }
 }

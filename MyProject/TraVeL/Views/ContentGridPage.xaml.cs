@@ -150,7 +150,24 @@ namespace TraVeL.Views
             return searchResults;
         }
 
+        private void SortOrderComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (SortOrderComboBox.SelectedItem is ComboBoxItem selectedSortItem)
+            {
+                string selectedSortOption = selectedSortItem.Content as string;
 
-
+                // Sort your items based on the selectedSortOption (e.g., ascending or descending)
+                if (selectedSortOption == "Ascending")
+                {
+                    // Sort in ascending order
+                    ViewModel.SortAscending();
+                }
+                else if (selectedSortOption == "Descending")
+                {
+                    // Sort in descending order
+                    ViewModel.SortDescending();
+                }
+            }
+        }
     }
 }

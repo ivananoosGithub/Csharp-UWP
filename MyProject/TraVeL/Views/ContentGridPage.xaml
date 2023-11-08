@@ -20,6 +20,14 @@
             <!-- AdaptiveGridView -->
         </Grid.RowDefinitions>
 
+        <ComboBox
+            x:Name="SortOrderComboBox"
+            SelectionChanged="SortOrderComboBox_SelectionChanged">
+            <ComboBoxItem Content="Ascending" />
+            <ComboBoxItem Content="Descending" />
+        </ComboBox>
+
+
         <!-- AutoSuggestBox and Search Results -->
         <StackPanel Grid.Row="0" Margin="{StaticResource MediumLeftRightMargin}">
             <AutoSuggestBox

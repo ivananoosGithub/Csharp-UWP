@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="location_name" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="Resources" />
@@ -144,7 +147,12 @@
       <RootProperty Name="Symbol" />
     </RootType>
     <RootType FullName="TraVeL.Views.ContentGridDetailPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView">
+      <RootProperty Name="Margin" />
       <RootProperty Name="Padding" />
       <RootProperty Name="DesiredWidth" />
       <RootProperty Name="ItemHeight" />
@@ -174,10 +182,18 @@
       <RootEvent Name="KeyUp" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Margin" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
       <RootEvent Name="ItemClick" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="TraVeL.Views.ContentGridPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
