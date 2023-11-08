@@ -1,12 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TraVeL.Core.Helpers;
 using TraVeL.Core.Models;
+using TraVeL.Services;
 using TraVeL.ViewModels;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
 
 namespace TraVeL.Views
@@ -81,6 +85,72 @@ namespace TraVeL.Views
                 }
             }
         }
+
+        private async void SearchBox_KeyUp(object sender, KeyRoutedEventArgs e)
+        {
+            // Get the text entered in the search box
+            string query = SearchBox.Text;
+
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                // Check if the search query is not empty
+                // You can perform your search operation here and populate the SearchResults ListView
+                var searchResults = await SearchDestinationsAsync(query);
+
+                if (searchResults.Count > 0)
+                {
+                    // If there are search results, populate the SearchResults ListView
+                    SearchResults.ItemsSource = searchResults;
+                    SearchResults.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    // If there are no results, hide the SearchResults ListView
+                    SearchResults.Visibility = Visibility.Collapsed;
+                }
+            }
+            else
+            {
+                // If the search query is empty, hide the SearchResults ListView
+                SearchResults.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void SearchResults_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (e.ClickedItem is DestinationModel clickedItem)
+            {
+                // Handle the item click from search results
+                // You can navigate to the detail page or perform other actions
+                // For example, you can navigate to the details page using the clickedItem.Id
+                // NavigationService.Navigate<DetailsPage>(clickedItem.Id);
+                NavigationService.Navigate<ContentGridDetailPage>(clickedItem.Id);
+            }
+        }
+
+
+        private async Task<List<DestinationModel>> SearchDestinationsAsync(string query)
+        {
+            // Initialize a list to store the search results
+            List<DestinationModel> searchResults = new List<DestinationModel>();
+
+            // Assuming you have an instance of your DbContext called "_dbContext"
+            // Use the _dbContext to query your database and filter destinations based on the query
+            // You can adjust the search criteria based on your database structure
+            // Here, I'm assuming you want to search for destinations by their location_name
+
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                searchResults = await _dbContext.Destination
+                    .Where(dest => dest.location_name.Contains(query))
+                    .ToListAsync();
+            }
+
+            // Return the search results
+            return searchResults;
+        }
+
+
 
     }
 }

@@ -30,13 +30,13 @@
     <AppXManifest Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-07T17:15:11.551</Modified>
+      <Modified>2023-11-08T15:59:08.803</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\TraVeL.exe">
       <PackagePath>entrypoint\TraVeL.exe</PackagePath>
-      <Modified>2023-11-07T17:15:10.422</Modified>
+      <Modified>2023-11-08T15:59:07.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\TraVeL.exe.config">
       <PackagePath>TraVeL.exe.config</PackagePath>
@@ -302,47 +302,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\TraVeL.xr.xml">
       <PackagePath>TraVeL.xr.xml</PackagePath>
-      <Modified>2023-11-07T16:11:45.765</Modified>
+      <Modified>2023-11-08T15:37:13.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\Page.xbf">
       <PackagePath>Styles\Page.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\_Colors.xbf">
       <PackagePath>Styles\_Colors.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\_FontSizes.xbf">
       <PackagePath>Styles\_FontSizes.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\_Thickness.xbf">
       <PackagePath>Styles\_Thickness.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Styles\TextBlock.xbf">
       <PackagePath>Styles\TextBlock.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.278</Modified>
+      <Modified>2023-11-08T15:59:07.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\AddDestinationForm.xbf">
       <PackagePath>Views\AddDestinationForm.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.279</Modified>
+      <Modified>2023-11-08T15:59:07.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\ContentGridDetailPage.xbf">
       <PackagePath>Views\ContentGridDetailPage.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.275</Modified>
+      <Modified>2023-11-08T15:59:07.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\ContentGridPage.xbf">
       <PackagePath>Views\ContentGridPage.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.279</Modified>
+      <Modified>2023-11-08T15:59:07.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2023-11-07T17:15:10.279</Modified>
+      <Modified>2023-11-08T15:59:07.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -362,7 +362,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\Programming\C#-Practice-Codes\C#-Projects\MyProject\TraVeL\bin\x86\Debug\Core\TraVeL.exe">
       <PackagePath>TraVeL.exe</PackagePath>
-      <Modified>2023-11-07T17:15:11.546</Modified>
+      <Modified>2023-11-08T15:59:08.800</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

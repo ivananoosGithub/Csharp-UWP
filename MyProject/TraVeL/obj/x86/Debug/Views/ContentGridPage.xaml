@@ -12,56 +12,72 @@
 
     <Grid x:ConnectionId='2' x:Name="ContentArea">
         <Grid.RowDefinitions>
-            <RowDefinition Height="48" />
+            <RowDefinition Height="Auto" />
+            <!-- AutoSuggestBox and Search Results -->
+            <RowDefinition Height="Auto" />
+            <!-- Add Destination Button -->
             <RowDefinition Height="*" />
+            <!-- AdaptiveGridView -->
         </Grid.RowDefinitions>
 
-        <TextBlock
-            Grid.Row="0"
-            x:Uid="ContentGrid_Title"
-            Margin="{StaticResource MediumLeftRightMargin}"
-            Style="{StaticResource PageTitleStyle}" />
+        <!-- AutoSuggestBox and Search Results -->
+        <StackPanel Grid.Row="0" Margin="{StaticResource MediumLeftRightMargin}">
+            <AutoSuggestBox x:ConnectionId='9'
+            x:Name="SearchBox"
+            PlaceholderText="Search for a destination"
+                                   
+            AutoSuggestBox.QueryIcon="Find"
+            Width="634" />
+            <ListView x:ConnectionId='10'
+            x:Name="SearchResults"
+            Height="100"
+            Visibility="Collapsed"
+            SelectionMode="Single"
+                                               >
+            </ListView>
+        </StackPanel>
 
-
+        <!-- Add Destination Button -->
         <Button x:ConnectionId='3'
-            Content="Add Destination"
-            Grid.Row="0"
-            Grid.Column="1"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Top"
-            Margin="{StaticResource SmallRightMargin}"
-                                               />
+        Content="Add Destination"
+        Grid.Row="1"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Top"
+        Margin="{StaticResource SmallRightMargin}"
+                                           />
 
+        <!-- AdaptiveGridView -->
         <controls:AdaptiveGridView x:ConnectionId='4'
-            Grid.Row="1"
-            Padding="{StaticResource MediumLeftRightMargin}"
-            animations:Connected.ListItemElementName="itemThumbnail"
-            animations:Connected.ListItemKey="animationKeyContentGrid"
-            DesiredWidth="180"
-            ItemHeight="160"
-            IsItemClickEnabled="True"
-                                                                  
-                                                               
-            SelectionMode="None"
-            StretchContentForSingleRow="False">
+        Grid.Row="2"
+        Padding="{StaticResource MediumLeftRightMargin}"
+        animations:Connected.ListItemElementName="itemThumbnail"
+        animations:Connected.ListItemKey="animationKeyContentGrid"
+        DesiredWidth="180"
+        ItemHeight="160"
+        IsItemClickEnabled="True"
+                                                              
+                                                           
+        SelectionMode="None"
+        StretchContentForSingleRow="False">
             <controls:AdaptiveGridView.ItemTemplate>
                 <DataTemplate                                     >
                     <Grid x:ConnectionId='6'
-                        x:Name="itemThumbnail"
-                        Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
-                        Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+                    x:Name="itemThumbnail"
+                    Padding="{StaticResource XSmallLeftTopRightBottomMargin}"
+                    Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
                         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                             <FontIcon x:ConnectionId='7'                                />
                             <TextBlock x:ConnectionId='8'
-                                Margin="{StaticResource XXSmallTopMargin}"
-                                HorizontalAlignment="Center"
-                                Style="{ThemeResource BodyTextStyle}"
-                                                              />
+                            Margin="{StaticResource XXSmallTopMargin}"
+                            HorizontalAlignment="Center"
+                            Style="{ThemeResource BodyTextStyle}"
+                                                          />
                         </StackPanel>
                     </Grid>
                 </DataTemplate>
             </controls:AdaptiveGridView.ItemTemplate>
         </controls:AdaptiveGridView>
     </Grid>
+
 </Page>
 
